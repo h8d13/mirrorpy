@@ -8,7 +8,7 @@ per-file patches over [upstream](https://github.com/archlinux/archweb) `mirrors/
 - `./gen-patches` 
 > regenerate `patches/` after editing `mirrors/standalone/`.
 
-Then load data and serve (`--check` also runs via `.gitlab-ci.yml`, ~15 min):
+Then load data and serve (`--check` also runs via GitHub Actions):
 
 ```sh
 python -m mirrors.standalone.app --db mirrors.db --init --import-urls  # ~1.2k mirrors
